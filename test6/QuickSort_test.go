@@ -6,7 +6,7 @@ import (
 )
 
 func TestQuickSort(t *testing.T) {
-	//intArr := []int{10000, 199,12, 5, 7,22, 6, 100, 99}
+	//intArr := []int{10000, 199,12, 5, 7,22, 6, 100, 99, 33}
 	//			   [7 22 12 5 22 199 10000 100 99]
 	//intArr := []int{5, 7, 4, 6, 3, 1, 2, 9, 8}
 	list := utils.RandList(100000000)
