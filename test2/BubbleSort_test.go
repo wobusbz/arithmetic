@@ -6,7 +6,7 @@ import (
 )
 
 func TestBubbleSort(t *testing.T) {
-	intArr := []int{10, 2, 5, 7, 6, 100, 99}
+	intArr := []int{10, 2, 5, 7, 6, 100, 99, 33}
 	BubbleSort(intArr)
 	list := utils.RandList(100000)
 	utils.CalcRunTime1("BubbleSort", BubbleSort, list)
