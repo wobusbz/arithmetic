@@ -29,30 +29,3 @@ func partition(intArr []int, startIndex int, endIndex int) int {
 	intArr[startIndex], intArr[left] = intArr[left], pivot
 	return left
 }
-
-func Quicksort(array []int, begin, end int) {
-	var i, j int
-	if begin < end {
-		i = begin + 1 // 将array[begin]作为基准数，因此从array[begin+1]开始与基准数比较！
-		j = end       // array[end]是数组的最后一位
-
-		for {
-			if i >= j {
-				break
-			}
-			if array[i] > array[begin] {
-				array[i], array[j] = array[j], array[i]
-				j = j - 1
-			} else {
-				i = i + 1
-			}
-
-		}
-		if array[i] >= array[begin] { // 这里必须要取等“>=”，否则数组元素由相同的值时，会出现错误！
-			i = i - 1
-		}
-		array[begin], array[i] = array[i], array[begin]
-		Quicksort(array, begin, i)
-		Quicksort(array, j, end)
-	}
-}

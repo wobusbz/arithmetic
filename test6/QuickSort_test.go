@@ -13,7 +13,6 @@ func TestQuickSort(t *testing.T) {
 	l := len(list) - 1
 	t.Log(l)
 	//QuickSort(intArr, 0, len(intArr)-1)
-	//utils.CalcRunTime("QuickSort", Quicksort, list, 0, l)
 	utils.CalcRunTime("QuickSort", QuickSort, list, 0, l)
 
 	//t.Log(list)
