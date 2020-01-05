@@ -24,6 +24,13 @@ func CalcRunTime1(t string, f func(intArr []int), intArr []int) {
 	fmt.Printf("%s 一共消耗时间: %v\n", t, e)
 }
 
+func CalcRunTime2(t string, f func(n int) int, n int) {
+	s := time.Now()
+	f(n)
+	e := time.Since(s)
+	fmt.Printf("%s 一共消耗时间: %v\n", t, e)
+}
+
 func RandList(n int) (list []int) {
 	for i := 0; i < n; i++ {
 		val := rand.Intn(1000000000)
