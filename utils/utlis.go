@@ -38,3 +38,7 @@ func RandList(n int) (list []int) {
 	}
 	return
 }
+
+var (
+	IntArr = []int{10000, 199, 12, 5, 7, 22, 6, 100, 99, 33}
+)
