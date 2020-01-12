@@ -16,7 +16,7 @@ func (s *Statck) push(n int) {
 
 func (s *Statck) pop() int {
 	if s.len() == 0 {
-		return 0
+		return -1
 	}
 	value := s.stack[s.len()-1:][0]
 	s.stack = s.stack[:s.len()-1]
