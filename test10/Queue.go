@@ -1,5 +1,6 @@
 package test10
 
+// 队列
 type Queue struct {
 	queue []int
 	rear  int // 尾部

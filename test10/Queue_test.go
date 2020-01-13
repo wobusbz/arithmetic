@@ -2,6 +2,7 @@ package test10
 
 import "testing"
 
+//队列
 func TestQueue_Init(t *testing.T) {
 	q := new(Queue)
 	q.Init(5)
