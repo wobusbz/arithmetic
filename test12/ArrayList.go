@@ -7,10 +7,10 @@ import (
 
 type List interface {
 	Size() int
-	Get(index int) ([]interface{}, error)
+	Get(index int) (interface{}, error)
 	Set(index int, newVal interface{}) error
 	Insert(index int, newVal interface{}) error
-	Append(newVal interface{}) error
+	Append(newVal interface{})
 	Clear()
 	Delete(index int) error
 	String() string
