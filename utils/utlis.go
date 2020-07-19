@@ -28,7 +28,7 @@ func CalcRunTime2(t string, f func(n int) int, n int) {
 	s := time.Now()
 	f(n)
 	e := time.Since(s)
-	fmt.Printf("%s 一共消耗时间: %v\n", t, e)
+	fmt.Printf("%s 一共消耗时间: %v\n", t, e.Milliseconds())
 }
 
 func RandList(n int) (list []int) {

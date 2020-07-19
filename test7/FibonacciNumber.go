@@ -9,9 +9,8 @@ func FibonacciNumber(n int) int {
 	var first int
 	var second = 1
 	for i := 0; i < n-1; i++ {
-		var sum = first + second // 0 + 1
 		//fmt.Printf("%d = %d + %d\n", sum, first, second)
-		first, second = second, sum //  前面的一个元素和sum交换  + sum 0+1 = 1 1+1 =2 2 +1 = 3
+		first, second = second, first+second //  前面的一个元素和sum交换  + sum 0+1 = 1 1+1 =2 2 +1 = 3
 	}
 	return second
 }
