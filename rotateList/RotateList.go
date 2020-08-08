@@ -1,6 +1,6 @@
 package rotateList
 
-func RotateList(intArr []int32, n int) []int32 {
+func RotateList(intArr []int32) []int32 {
 	if len(intArr) < 1 {
 		return intArr
 	}
@@ -8,4 +8,10 @@ func RotateList(intArr []int32, n int) []int32 {
 		intArr[i], intArr[len(intArr)-1-i] = intArr[len(intArr)-1-i], intArr[i]
 	}
 	return intArr
+}
+
+func Roate(intArr []int32, n int) {
+	RotateList(intArr)
+	RotateList(intArr[:2%len(intArr)])
+	RotateList(intArr[2%len(intArr):])
 }
