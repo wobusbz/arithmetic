@@ -26,7 +26,6 @@ func UniteList(arrs0, arrs1 []int) []int {
 
 func UniteList1(arrs0, arrs1 []int) []int {
 	var i, j, k = 0, 0, 0
-
 	sort.Ints(arrs0)
 	sort.Ints(arrs1)
 	for i < len(arrs0) && j < len(arrs1) {
