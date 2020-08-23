@@ -1,9 +1,5 @@
 package dealStock
 
-import (
-	"fmt"
-)
-
 func DealStock(prices []int32) int32 {
 	if len(prices) < 2 {
 		return 0
@@ -31,7 +27,6 @@ func DealStock1(prices []int32) int32 {
 		maxPrices[i][0] = Max(maxPrices[i-1][0], maxPrices[i-1][1]+prices[i])
 		maxPrices[i][1] = Max(maxPrices[i-1][0]-prices[i], maxPrices[i-1][1])
 	}
-	fmt.Println(maxPrices)
 	return maxPrices[len(prices)-1][0]
 }
 
